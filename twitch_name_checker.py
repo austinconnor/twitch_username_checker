@@ -1,7 +1,11 @@
 #!/usr/bin/env python
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from sty import fg, rs
 import time
+
+chrome_options = Options()
+chrome_options.add_argument('--log-level=3')
 
 usernames_file = "names.txt"
 base_url = "https://www.twitch.tv/"
